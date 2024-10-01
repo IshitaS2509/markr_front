@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5; /* Light background for contrast */
+    font-family: Arial, sans-serif;
+  }
+  
+  .quote-card {
+    background: linear-gradient(90deg, #0072ff, #9b59b6); /* Blue to Medium Purple */
+
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limit width for larger screens */
+    margin: 2rem auto; /* Center horizontally and add vertical spacing */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transition */
+  }
+  
+  .quote-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  }
+  
+  .quote {
+    font-size: 1.2rem; /* Responsive font size */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  @media (max-width: 768px) {
+    .quote {
+      font-size: 1rem; /* Smaller font size for mobile */
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+  
