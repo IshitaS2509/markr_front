@@ -10,6 +10,7 @@ import Home5 from './components/Home5/Home5';
 import Home6 from './components/Home6/Home6';
 import GPAcalculator from './components/GPAcalculator/GPAcalculator';
 import AboutPage from './components/AboutPage/AboutPage';
+import ContactUsPage from './components/ContactUsPage/ContactUsPage';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
             </>
           } />
         <Route path="/about" element={<AboutPage/>} />
+        <Route path="/contact" element={<ContactUsPage/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
