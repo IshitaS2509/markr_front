@@ -8,6 +8,8 @@ import Home4 from './components/Home4/Home4';
 import Footer from './components/Footer/Footer';
 import Home5 from './components/Home5/Home5';
 import Home6 from './components/Home6/Home6';
+import GPAcalculator from './components/GPAcalculator/GPAcalculator';
+import AboutPage from './components/AboutPage/AboutPage';
 
 const App = () => {
   return (
@@ -28,8 +30,10 @@ const App = () => {
               <br/>
               <Home6/>
               <br/>
+              <GPAcalculator/>
             </>
           } />
+        <Route path="/about" element={<AboutPage/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
