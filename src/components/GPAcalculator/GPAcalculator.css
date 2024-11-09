@@ -1,0 +1,110 @@
+/* frontend/src/components/GPACalculator.css */
+
+.gpa-calculator-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #f0f4f9, #d9e2ef);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .gpa-calculator-container h2 {
+    font-size: 3em;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: #FF6347;
+    background: linear-gradient(to right, #FF7961, #FF6347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:  4px 4px 8px  #FF7961;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: #FF6347;
+    box-shadow: 0 0 5px rgba(214, 101, 20, 0.4);
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin-right:20px;
+    font-size: 1em;
+    font-weight: bold;
+    background: linear-gradient(to right, #FF7961, #FF6347);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #eaf6fc);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.2em;
+    color: #555;
+    padding: 8px 0;
+  }
+  
+  @media (min-width: 768px) {
+    form div {
+      flex-direction: row;
+    }
+  
+    input {
+      margin-right: 10px;
+    }
+  
+    button {
+      width: auto;
+    }
+  }
+  
